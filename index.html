@@ -15,10 +15,10 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <img src="/images/logo.png"><span><h2>ECOMP</h2></span>
+                    <img src="/images/logo.png"><h2>ECOMP<span class="span-dot">.</span></h2>
                 </div>
                 <div class="close" id="close-btn">
-                    <span class="fa-solid fa-xmark"></span>
+                    <span class="fa-solid fa-xmark">close</span>
                 </div>
             </div>
             <div class="sidebar">
@@ -68,18 +68,16 @@
         <!-- end of aside -->
         <!-- main start-->
         <main>
-            <h1>Dashboard</h1>
-            
+            <h1>Dashboard</h1>   
             <div class="date">
                 <input type="date">
             </div>
-
             <div class="insights">
                 <div class="sales">
                     <span class="fa-solid fa-square-poll-vertical"></span>
                     <div class="middle">  
                         <div class="left">
-                            <h3>Total Sales</h3>
+                            <h3>Total <br> Sales</h3>
                             <h1>$24,022</h1>
                         </div>
                         <div class="progress">
@@ -142,7 +140,7 @@
                                             <th>Product Name</th>
                                             <th>Product Number</th>
                                             <th>Payment</th>
-                                            <th>Statur</th>
+                                            <th>Status</th>
                                             <th></th>
                                         </tr>
                                     </tbody> 
@@ -188,33 +186,41 @@
         </main>
         <div class="right">
             <div class="top">
-                <button id="menu-btn" class="fa-solid fa-bars">
-                </button>
+                
+                <button class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button> 
+               
                 <div class="profile">
+                   
                     <div class="info">
                         <p>Hey, <b>Jessika</b></p>
                         <small class="text-muted">Admin</small>
                     </div>
+                    
                     <div class="profile-photo">
-                        <img src="/images/me.jpeg">
+                        <img src="/images/user.png">
                     </div>
+                    
                 </div>
             </div>
                 <div class="recent-updates">
                     <h2>Recent Updates</h2>
                     <div class="updates">
+
                         <div class="update">
                             <div class="profile-photo">
-                                <img src="/images/me.jpeg">
+                                <img src="/images/user.png">
                             </div>
                             <div class="message">
                                 <p><b>Michelle Tyson</b> received her order of Night Lion tech GPS drone</p>
                                 <small class="text-muted">2 Minutes Ago</small>
                             </div>
                         </div>
+
                         <div class="update">
                             <div class="profile-photo">
-                                <img src="/images/me.jpeg">
+                                <img src="/images/user.png">
                             </div>
                             <div class="message">
                                 <p><b>Adam Miller</b> received his order of Night Lion tech GPS drone</p>
@@ -223,7 +229,7 @@
                         </div>
                         <div class="update">
                             <div class="profile-photo">
-                                <img src="/images/me.jpeg">
+                                <img src="/images/user.png">
                             </div>
                             <div class="message">
                                 <p><b>Brody Davis</b> received his order of Night Lion tech GPS drone</p>
@@ -231,8 +237,60 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="sales-analytics">
+                        <h2>Sales Analytics</h2>
+
+                        <div class="item online">
+                            <div class="icon">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>ONLINE ORDERS</h3>
+                                <small class="text-muted">Last 24 Hours</small>
+                            </div>
+                            <h5 class="success">+39%</h5>
+                            <h3>3849</h3>
+                        </div>
+                    </div>
+
+                    <div class="item offline">
+                        <div class="icon">
+                             <span><i class="fa-solid fa-shop"></i></span>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>OFFLINE ORDERS</h3>
+                                <small class="text-muted">Last 24 Hours</small>
+                            </div>
+                            <h5 class="danger">-39%</h5>
+                            <h3>1100</h3>
+                        </div>
+                    </div>
+
+                        <div class="item customers">
+                            <div class="icon">
+                                <span><i class="fa-solid fa-user"></i></span>
+                            </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>NEW CUSTOMERS</h3>
+                                <small class="text-muted">Last 24 Hours</small>
+                            </div>
+                            <h5 class="success">+25%</h5>
+                            <h3>849</h3>
+                        </div>
+                    </div>
+                    <div class="item add-product">
+                        <div>
+                            <span class="fa-solid fa-plus"></span>
+                            <h3>Add product</h3>
+                        </div>
+                    </div>        
                 </div>
-            </div>    
+             </div>
+        </div>    
      </div>
 </body>
 </html>
